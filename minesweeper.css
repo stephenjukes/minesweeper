@@ -1,0 +1,126 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+}
+
+body {
+	text-align: center;
+}
+#options li {
+	display: inline-block;
+	width: 80px;
+	padding: 5px;
+	margin: 20px 10px;
+	font: bold 14px Arial;
+	border: 1px solid gray;
+	border-radius: 5px;
+	background: linear-gradient(#bbb, #ccc);
+}
+
+#options li:hover {
+	cursor: pointer;
+}
+
+#options input {
+	width: 100%;
+}
+
+#frame {
+	display: inline-block;
+	padding: 10px;
+	border: 1px solid #888;
+	background: linear-gradient(45deg, #ccc, #ddd);
+}
+
+#info {
+	height: 30px;
+	background: gray;
+	margin-bottom: 5px;
+	background: #ccc;
+	border-top: 2px solid #666;
+	border-left: 2px solid #666;
+	border-right: 2px solid #fff;
+	border-bottom: 2px solid #fff;
+}
+
+#info * {
+	font: bold 20px/26px Arial;
+	padding: 0 10px 0 35px;
+	color: #c00;
+}
+
+#info p {
+	float: left;
+	background: white url('images/flag.png') no-repeat 5px center;
+	background-size: 24px;
+	border-radius: 0 10px 10px 0;
+}
+
+#info time {
+	float: right;
+	background: white url('images/clock.png') no-repeat 5px center;
+	background-size: 22px;
+	border-radius: 10px 0 0 10px;
+}
+
+#board {
+	display: inline-block;
+	background: pink;
+}
+
+.row {
+	clear: left;
+	float: left;
+	background: gray;
+}
+
+.cell {
+	float: left;
+	height: 30px;
+	width: 30px;
+  	font: bold 20px/30px Arial;
+	border: 1px solid #666;
+}
+
+.covered {
+	background: #ccc;
+	border-top: 2px solid #fff;
+	border-left: 2px solid #fff;
+	border-right: 2px solid #666;
+	border-bottom: 2px solid #666;
+}
+
+.revealed {
+   background: #999;
+}
+
+.mine {
+	background: url('images/mine.png') no-repeat center center;
+	background-size: 65%;
+}
+
+.mineHit {
+	background: red url('images/mine.png') no-repeat center center;
+	background-size: 65%;
+}
+
+.flagged {
+	background: #ccc url('images/flag.png') no-repeat center center;
+	background-size: 80%;
+}
+
+.cell:hover {
+	cursor: pointer;
+}
+
+#message p {
+	font: bold 14px Arial;
+	max-width: 200px;
+	padding: 10px;
+	margin: 10px auto;
+	border-radius:40px;
+	background: #f99;
+}
